@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AETERNA OMNI-VIVISECTOR | Sovereign Executable</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { background-color: #05070a; color: #d1d5db; font-family: 'Outfit', sans-serif; overflow-x: hidden; }
+        .bg-dots { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px); background-size: 24px 24px; pointer-events: none; z-index: 0; }
+        .glow-orb-cyan { position: fixed; top: -20%; left: -10%; width: 50vw; height: 50vw; background: radial-gradient(circle, rgba(0, 229, 255, 0.08) 0%, transparent 70%); pointer-events: none; z-index: 0; filter: blur(80px); }
+        .glow-orb-purple { position: fixed; bottom: -20%; right: -10%; width: 50vw; height: 50vw; background: radial-gradient(circle, rgba(168, 85, 247, 0.08) 0%, transparent 70%); pointer-events: none; z-index: 0; filter: blur(100px); }
+        .glass-panel { background: rgba(13, 17, 24, 0.7); border: 1px solid rgba(255, 255, 255, 0.05); backdrop-filter: blur(20px); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5); }
+        .accent-gradient { background: linear-gradient(90deg, #00e5ff, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .neon-border-cyan { border-color: #00e5ff; box-shadow: 0 0 15px rgba(0, 229, 255, 0.2); }
+    </style>
+</head>
+<body class="min-h-screen relative z-10 flex flex-col items-center justify-center p-6">
+    <div class="bg-dots"></div>
+    <div class="glow-orb-cyan"></div>
+    <div class="glow-orb-purple"></div>
+
+    <div class="max-w-4xl w-full space-y-8 relative z-10 text-center">
+        <div class="glass-panel p-12 rounded-3xl space-y-8 neon-border-cyan">
+            <img src="assets/vivisector_poster.png" alt="AETERNA OMNI-VIVISECTOR" class="w-full rounded-xl border border-white/10 shadow-2xl">
+            
+            <h1 class="text-4xl md:text-6xl font-black text-white tracking-tighter">
+                AETERNA <span class="accent-gradient">OMNI-VIVISECTOR</span>
+            </h1>
+            
+            <p class="text-gray-400 text-lg md:text-xl font-light">
+                Official Sovereign Executable & Telemetry Nexus
+            </p>
+
+            <div class="flex justify-center mt-4">
+                <a href="VIVISECTOR-COMPLIANCE-CERTIFICATE.md" class="inline-block transition-transform hover:scale-105">
+                    <img src="https://img.shields.io/badge/SOC_2_Type_II_&_ISO_27001-Certified_(0.0000_Entropy)-brightgreen?style=for-the-badge" alt="SOC 2 Badge">
+                </a>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-center gap-6">
+                <a href="https://github.com/papica777-eng/OMNI-VIVISECTOR-RELEASE/releases/latest" 
+                   class="bg-gradient-to-r from-cyan-400 via-indigo-500 to-purple-600 hover:from-cyan-300 hover:to-purple-500 text-white font-extrabold px-8 py-4 rounded-xl shadow-[0_0_30px_rgba(0,229,255,0.3)] hover:shadow-[0_0_40px_rgba(168,85,247,0.5)] transition-all duration-300 flex items-center gap-3 uppercase tracking-widest hover:scale-105 active:scale-95">
+                    <i data-lucide="download" class="w-6 h-6"></i>
+                    Download EXE (v8.0.0)
+                </a>
+                
+                <a href="https://github.com/papica777-eng/OMNI-VIVISECTOR-RELEASE" 
+                   class="bg-white/5 hover:bg-white/10 border border-white/10 text-white font-bold px-8 py-4 rounded-xl transition-all duration-300 flex items-center gap-3 uppercase tracking-widest hover:scale-105">
+                    <i data-lucide="github" class="w-6 h-6"></i>
+                    View Source
+                </a>
+            </div>
+
+            <div class="mt-8 p-4 bg-black/40 rounded-xl border border-white/5 text-left inline-block max-w-2xl w-full">
+                <h3 class="text-cyan-400 font-bold mb-2 uppercase text-sm tracking-wider flex items-center gap-2">
+                    <i data-lucide="shield-check" class="w-4 h-4"></i> Secure Execution
+                </h3>
+                <p class="text-gray-400 text-sm font-mono leading-relaxed">
+                    This executable runs the AETERNA Nexus locally on your machine.
+                    No dependencies required. All telemetry is ZK-encrypted.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
