@@ -8,6 +8,19 @@
 
 ---
 
+## **TL;DR: What exactly is this? (In Plain English)**
+
+OMNI-VIVISECTOR is an extremely powerful, automated security auditor for Web3, Crypto, and DeFi projects. Instead of paying human auditors thousands of dollars to read smart contracts line-by-line, you feed the code to Vivisector. 
+
+It instantly scans the code, finds critical vulnerabilities (like money-stealing bugs, frozen funds, or access control flaws), and mathematically proves if they are exploitable. 
+
+**You can use it in 4 ways:**
+1. **VS Code Extension:** Scans your code live while you type in your editor.
+2. **Chrome Extension:** Scans live smart contracts directly on Etherscan or GitHub before you interact with them.
+3. **Windows Executable (.exe):** A standalone app you can just double-click to run a massive audit locally.
+4. **Command Line (CLI):** For automated CI/CD pipelines and massive codebase scans.
+
+---
 ## BOUNTY_VIVISECTOR.ts
 
 ### **UKAME INTER-PROCEDURAL TAINT TRAVERSAL ENGINE & IMMUNEFI v2.3 PAYABILITY REPORTING (v8.0 ENTERPRISE)**
