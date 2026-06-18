@@ -72,7 +72,16 @@ Key HUD Features:
 [Markdown/JSON Report Generator]
 ```
 
-### **2.2 Zero-Knowledge Telemetry & Threat Intelligence Architecture**
+### **2.2 AETERNA VIVISECTOR Chrome Extension (On-Chain Ingress)**
+
+The Sovereign Swarm doesn't just run locally — it injects its logic directly into your browser. The proprietary Manifest V3 Chrome Extension provides live, on-chain code audits by overlaying the Catuskoti paradox engine directly onto:
+- **Etherscan / Arbiscan / BscScan**: Audit verified smart contracts in real-time before interacting with them.
+- **GitHub**: Instant static analysis of pull requests and repositories.
+- **HackerOne / Bugcrowd**: Seamless integration with bug bounty platforms for instant validation of target codebases.
+
+The extension connects to your local `SovereignStudioServer` (Port 8890) and uses zero-copy telemetry to display the results natively in a Cyberpunk side panel.
+
+### **2.3 Zero-Knowledge Telemetry & Threat Intelligence Architecture**
 
 To ensure a secure, confidential, and completely transparent data channel (Social Proof), we implemented a **Zero-Knowledge (ZK) Telemetry Pulse** architecture. When the local audit finishes in the secure browser sandbox (or the VS Code Extension), the system sends a "blind" anonymous ping to our server, which feeds the neon odometer on the landing page:
 
