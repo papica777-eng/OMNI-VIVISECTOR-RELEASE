@@ -51,6 +51,12 @@ BOUNTY_VIVISECTOR is a module of the OMNI-VIVISECTOR platform designed to provid
 
 OMNI-VIVISECTOR is now fully integrated directly into the developer's IDE as a VS Code Webview Extension. This represents a massive leap from the CLI, providing a **Sovereign Telemetry Console** directly connected to the WASM scanner engine.
 
+**Installation Instructions:**
+1. Download `omni-vivisector-1.0.3.vsix` from the [Releases](https://github.com/papica777-eng/OMNI-VIVISECTOR-RELEASE/releases/latest) page.
+2. Open VS Code, go to the Extensions panel (`Ctrl+Shift+X`).
+3. Click the `...` menu at the top right of the panel and select **"Install from VSIX..."**.
+4. Select the downloaded `.vsix` file. The Sovereign Telemetry HUD will appear in your Activity Bar.
+
 Key HUD Features:
 - **Sovereign AI Agent Swarm:** A decentralized architecture of Knox WASM isolated Domain Micro-agents communicating telemetry over a zero-copy lock-free ring buffer (Event Bus), separating deterministic Runtime Verification (RV) state-transition rules from probabilistic Explainable AI (XAI) neural introspection.
 - **Hardware Telemetry on the Edge:** Non-intrusive dynamic profiling via kernel eBPF probes mapped to lock-free ring buffers in user-space, executed inside hardware-enforced Trusted Execution Environments (TEEs) to maintain EAL4+ compliance.
