@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/vivisector_poster.png" width="280" alt="OMNI-VIVISECTOR" />
+  <img src="assets/omni-vivisector-logo.png" width="300" alt="OMNI-VIVISECTOR" />
   <h1>AETERNA OMNI-VIVISECTOR</h1>
   <p><strong>Enterprise-Grade Zero-Knowledge Smart Contract & Systems Auditing Engine</strong></p>
   
