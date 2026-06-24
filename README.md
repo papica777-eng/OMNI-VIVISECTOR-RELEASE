@@ -77,7 +77,7 @@ Watch how OMNI-VIVISECTOR destroys vulnerable contracts and scans IPs in real-ti
 OMNI-VIVISECTOR provides native, automated integrations to license and monetize the platform:
 
 1. **GitHub Sponsors (Auto-Licensing)**: Users who sponsor the project on GitHub are automatically granted a `VORTEX_GITHUB_SPONSOR` license. Simply login via the **GitHub Login** button in the dashboard, and the system will automatically query the GitHub GraphQL API, verify the sponsorship, and unlock the platform with a 5,000,000 requests quota.
-2. **Stripe Checkout**: Enterprise users can securely purchase standalone licenses (like the VORTEX_EMPIRE tier) via Stripe. The platform uses a webhook-driven architecture to instantly provision `sk_vortex_` API keys upon successful payment.
+2. **PayPal Gateway**: Enterprise users can securely purchase standalone licenses (like the VORTEX_EMPIRE tier) directly via PayPal. The platform uses the robust PayPal Webhook architecture to instantly provision `sk_vortex_` API keys upon successful payment execution.
 
 To manually activate a license, input your `sk_vortex_...` key in the "ACCESS CODE" field on the dashboard.
 
