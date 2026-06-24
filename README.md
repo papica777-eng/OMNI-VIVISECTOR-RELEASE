@@ -145,12 +145,6 @@ To acquire an `sk_vortex` key, book a demo, or request a Custom Enterprise CISO 
 **Windows SmartScreen Warning:**
 Because this is an Enterprise closed-source binary and not distributed via the Microsoft Store, Windows Defender SmartScreen may display a warning (*Windows protected your PC*). This is completely normal for non-EV-signed executables.
 
-
-## 🛡️ Security & Installation
-
-**Windows SmartScreen Warning:**
-Because this is an Enterprise closed-source binary and not distributed via the Microsoft Store, Windows Defender SmartScreen may display a warning (*Windows protected your PC*). This is completely normal for non-EV-signed executables.
-
 To install:
 1. Click **More info**
 2. Click **Run anyway**
