@@ -1,0 +1,36 @@
+name: 'OMNI-VIVISECTOR CI/CD Gatekeeper'
+description: 'Sovereign Offline ZK-WASM Formal Verification Code Auditor & Pull Request Gatekeeper'
+author: 'AETERNA / Dimitar Prodromov'
+branding:
+  icon: 'shield-alert'
+  color: 'blue'
+
+inputs:
+  target_directory:
+    description: 'Локална директория за сканиране'
+    required: false
+    default: './'
+  vortex_api_key:
+    description: 'Vortex API Key за отключване на ZK-WASM ядрото'
+    required: false
+    default: 'AETERNA9669_OFFLINE_SOVEREIGN_TOKEN_BYPASS_KEY_4121_VORTEX'
+  output_file:
+    description: 'Път до Markdown доклада'
+    required: false
+    default: 'vivisector-report.md'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Setup Node.js Environment
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Execute Sovereign ZK-WASM Code Audit
+      shell: bash
+      run: |
+        echo "🔱 [VIVISECTOR ACTION] Initializing Gatekeeper Swarm..."
+        node ${{ github.action_path }}/../../../cli/viver.js "${{ inputs.target_directory }}" --key "${{ inputs.vortex_api_key }}" --output "${{ inputs.output_file }}"
+      env:
+        GITHUB_TOKEN: ${{ github.token }}

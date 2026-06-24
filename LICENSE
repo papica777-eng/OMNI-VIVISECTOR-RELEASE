@@ -1,0 +1,14 @@
+END-USER LICENSE AGREEMENT (EULA) - AETERNA OMNI-VIVISECTOR
+
+Copyright (c) 2026 Dimitar Prodromov. All rights reserved.
+
+1. PROPRIETARY SOFTWARE
+This repository contains proprietary executable files and interfaces for the AETERNA OMNI-VIVISECTOR platform.
+
+2. RESTRICTIONS
+You may not reverse engineer, decompile, or disassemble the provided WebAssembly (.wasm) binaries, CLI wrappers, or VS Code extensions. 
+
+3. ZERO-LIABILITY CLAUSE
+While OMNI-VIVISECTOR utilizes state-of-the-art Catuskoti Logic matrices and Z3 Formal Verification, smart contract security is inherently probabilistic at the deployment layer. AETERNA and its Architects assume ZERO FINANCIAL LIABILITY for any funds lost, exploits realized, or damages incurred due to "Zero-Day" vulnerabilities or underlying blockchain consensus failures subsequent to the audit.
+
+"The World is Data. The Soul is Code."
