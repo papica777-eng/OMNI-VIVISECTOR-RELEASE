@@ -67,26 +67,45 @@ Here is our **Hall of Fame**—verified by the most rigorous bug bounty programs
 
 ---
 
+## 🎥 Video Demo: Real-World Action
+
+Watch how OMNI-VIVISECTOR destroys vulnerable contracts and scans IPs in real-time, catching hardcoded threats via the 100-Point Brutal Hybrid Test engine:
+👉 **[Watch the Live Demo](https://aeterna.website/omni-vivisector/docs.html)**
+
+## 💸 Monetization & Licensing (v8.2.0)
+
+OMNI-VIVISECTOR provides native, automated integrations to license and monetize the platform:
+
+1. **GitHub Sponsors (Auto-Licensing)**: Users who sponsor the project on GitHub are automatically granted a `VORTEX_GITHUB_SPONSOR` license. Simply login via the **GitHub Login** button in the dashboard, and the system will automatically query the GitHub GraphQL API, verify the sponsorship, and unlock the platform with a 5,000,000 requests quota.
+2. **Stripe Checkout**: Enterprise users can securely purchase standalone licenses (like the VORTEX_EMPIRE tier) via Stripe. The platform uses a webhook-driven architecture to instantly provision `sk_vortex_` API keys upon successful payment.
+
+To manually activate a license, input your `sk_vortex_...` key in the "ACCESS CODE" field on the dashboard.
+
+---
+
 ## 🚀 Installation & Enterprise Integration
 
 OMNI-VIVISECTOR is designed for frictionless integration into your existing DevSecOps pipeline without ever exposing the underlying proprietary cognitive core.
 
-### 1. Local Node.js CLI (\`viver.js\`)
+### 📥 1. Standalone Desktop Client (Recommended)
+Download the attached `OMNI-VIVISECTOR Setup 8.2.0.exe` file from the **Releases** tab, run the installer, and enjoy your locally sovereign Web3 security suite!
+
+### 2. Local Node.js CLI (`viver.js`)
 Run formal verifications directly on your local machine. Perfect for independent researchers and Wardens.
-\`\`\`bash
+```bash
 # Install the CLI and MCP Server globally
 npm i -g @aeterna/omni-vivisector-mcp
 
 # Execute a local scan on your smart contracts using your Enterprise Key
 viver ./my-smart-contracts/ --key sk_vortex_...
-\`\`\`
+```
 
-### 2. IDE Integration (VS Code Extension)
-Download the compiled extension from \`vscode-extension/omni-vivisector-8.2.0.vsix\` and drag-and-drop it into your IDE for real-time, inline security linting. No code leaves your editor.
+### 3. IDE Integration (VS Code Extension)
+Download the compiled extension from `vscode-extension/omni-vivisector-8.2.0.vsix` and drag-and-drop it into your IDE for real-time, inline security linting. No code leaves your editor.
 
-### 3. Model Context Protocol (MCP) Server
-Integrate the OMNI-VIVISECTOR formal logic engine directly with Claude Desktop or Cursor for AI-assisted Proof-of-Concept generation. Add to your \`claude_desktop_config.json\`:
-\`\`\`json
+### 4. Model Context Protocol (MCP) Server
+Integrate the OMNI-VIVISECTOR formal logic engine directly with Claude Desktop or Cursor for AI-assisted Proof-of-Concept generation. Add to your `claude_desktop_config.json`:
+```json
 {
   "mcpServers": {
     "omni-vivisector": {
@@ -95,23 +114,23 @@ Integrate the OMNI-VIVISECTOR formal logic engine directly with Claude Desktop o
     }
   }
 }
-\`\`\`
+```
 
-### 4. CI/CD GitHub Actions (CISO Fleet)
+### 5. CI/CD GitHub Actions (CISO Fleet)
 Block malicious commits automatically before they reach production.
-\`\`\`yaml
+```yaml
 - name: AETERNA Formal Verification
   uses: papica777-eng/OMNI-VIVISECTOR-RELEASE/.github/actions/vivisector@main
   with:
     target_directory: './contracts'
-    vortex_api_key: \${{ secrets.VORTEX_KEY }}
-\`\`\`
+    vortex_api_key: ${{ secrets.VORTEX_KEY }}
+```
 
 ---
 
 ## ⚖️ Enterprise Pricing & Licensing
 
-To acquire an \`sk_vortex\` key, book a demo, or request a Custom Enterprise CISO integration, visit our official portal:
+To acquire an `sk_vortex` key, book a demo, or request a Custom Enterprise CISO integration, visit our official portal:
 👉 **[https://aeterna.website](https://aeterna.website)**
 
 **Proprietary Notice & EULA:**
